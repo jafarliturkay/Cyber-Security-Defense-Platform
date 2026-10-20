@@ -33,12 +33,12 @@
 
 ## 🛠️ Kullanılan Teknolojiler ve Kütüphaneler
 
-* **Dil:** Python 3.10+
-* **Arayüz (GUI):** PyQt6 (Özel animasyonlu arayüz bileşenleri, QStackedWidget, QTableWidget)
-* **Ağ & Tarama:** `python-nmap`, Sockets, Subprocess (ARP analizi)
-* **Veritabanı:** SQLite3 (Güvenli şifre hashleme, denetim logları, tarama geçmişi)
-* **Grafik & Görselleştirme:** Matplotlib (Port dağılım grafikleri)
-* **Paketleme:** PyInstaller (`.exe` dönüştürücü ve otomatik `.ico` kalkan logo üreticisi)
+- **Dil:** Python 3.10+
+- **Arayüz (GUI):** PyQt6 (Özel animasyonlu arayüz bileşenleri, QStackedWidget, QTableWidget)
+- **Ağ & Tarama:** `python-nmap`, Sockets, Subprocess (ARP analizi)
+- **Veritabanı:** SQLite3 (Güvenli şifre hashleme, denetim logları, tarama geçmişi)
+- **Grafik & Görselleştirme:** Matplotlib (Port dağılım grafikleri)
+- **Paketleme:** PyInstaller (`.exe` dönüştürücü ve otomatik `.ico` kalkan logo üreticisi)
 
 ---
 
@@ -50,13 +50,18 @@ Bilgisayarınızda projenin kaynak kodlarını çalıştırmak için şu adımla
    ```bash
    git clone [https://github.com/jafarliturkay/Cyber-Security-Defense-Platform.git](https://github.com/jafarliturkay/Cyber-Security-Defense-Platform.git)
    cd Cyber-Security-Defense-Platform
+   Gerekli kütüphaneleri yükleyin:
 
-Gerekli kütüphaneleri yükleyin:
+Bash
 pip install PyQt6 matplotlib python-nmap
 Uygulamayı başlatın:
+
+Bash
 python main.py
 (Not: Ağ tarama özelliklerinin tam çalışabilmesi için sisteminizde Nmap kurulu olmalıdır).
 
-Tek Tıkla Çalıştırılabilir (.EXE) Sürümü Oluşturma:
+📦 Tek Tıkla Çalıştırılabilir (.EXE) Sürümü Oluşturma
 Python veya ek kütüphaneler kurmadan doğrudan masaüstünde çalıştırmak isterseniz PyInstaller ile paketleyebilirsiniz:
+
+Bash
 pyinstaller --noconsole --onefile --icon=app_icon.ico main.py
