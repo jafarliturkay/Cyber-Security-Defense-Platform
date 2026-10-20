@@ -1,0 +1,1 @@
+import sqlite3, hashlib; conn=sqlite3.connect("network_scans.db"); conn.execute("UPDATE users SET password=? WHERE username=?", (hashlib.sha256("RosieTurkay2005.".encode("utf-8")).hexdigest(), "admin")); conn.commit(); conn.close(); print("Admin sifresi basariyla guncellendi!")
